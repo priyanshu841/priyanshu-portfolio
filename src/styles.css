@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=New+Rocker&family=Special+Elite&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 :root{font-family:'DM Sans',sans-serif;color:#e8eae4;background:#101210;font-synthesis:none;text-rendering:optimizeLegibility;scroll-behavior:smooth;--bg:#101210;--panel:#171a17;--line:#30352e;--muted:#92988d;--lime:#ff3b45;--mono:'DM Mono',monospace;--display:'Space Grotesk',sans-serif}
 *{box-sizing:border-box}body{margin:0;background:var(--bg)}a{color:inherit;text-decoration:none}button{font:inherit}.site-shell{overflow:hidden;position:relative}.noise{position:absolute;inset:0;pointer-events:none;opacity:.035;z-index:5;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
 .section-wrap{width:min(1180px,calc(100% - 64px));margin:0 auto}.header{height:86px;width:min(1320px,calc(100% - 64px));margin:auto;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #292d27;position:relative;z-index:10}.brand{display:flex;align-items:center;gap:11px}.brand-mark{font:700 28px var(--display);letter-spacing:-3px;color:#f0f2eb}.brand-mark span{color:var(--lime)}.brand-name{font:600 12px/1.3 var(--display);letter-spacing:1.7px}.brand-name small{font:9px var(--mono);letter-spacing:1px;color:var(--muted)}.nav{display:flex;align-items:center;gap:31px}.nav>a{font-size:12px;color:#b8bcb4;transition:color .2s}.nav>a:hover{color:var(--lime)}.nav .nav-cta{color:var(--lime);font:11px var(--mono);letter-spacing:.6px;display:flex;align-items:center;gap:7px;margin-left:10px}.menu-toggle{display:none;background:none;border:0;color:white}
@@ -50,3 +50,36 @@ body{background:#0d0d0f}
 .skill-pills span{border-color:#61363b;color:#e4c9cb}
 .replace-hint{color:#a08e91}
 @media(max-width:650px){.nav{background:#151315;border-bottom-color:#443034}}
+
+
+/* Rough fantasy-game concept-art lettering across the full portfolio. */
+:root{--display:'New Rocker',cursive;--mono:'Special Elite',monospace}
+html,body,button,input,textarea,select{font-family:'New Rocker',cursive}
+.brand-name,.eyebrow,.hero-index,.stage-topline,.stage-bottom,.stage-vertical,.hero-bottom-note,
+.section-label,.filter-caption,.filter,.result-count,.project-meta,.visual-index,.visual-duration,
+.work-footnote,.capability>span,.script-badge,.script-tag,.script-version,.script-bottom strong,
+.skill-pills span,.contact-links a,.footer>span,.footer>a:not(.brand){font-family:'Special Elite',monospace}
+h1,h2,h3,.brand-mark,.button,.text-link,.nav>a,.visual-symbol{font-family:'New Rocker',cursive}
+.hero h1,.section-heading h2,.technical-layout h2,.about-layout h2,.contact-main h2{letter-spacing:-.025em;line-height:1.06}
+.brand-name{letter-spacing:1px}
+.nav>a,.button,.text-link{letter-spacing:.035em}
+.project-card h3,.script-card h3,.capability h3{letter-spacing:0;line-height:1.25}
+.hero-stage.showreel-stage{min-height:500px;background:#100d0f;border-color:#543238;display:flex;flex-direction:column}
+.showreel-frame{position:absolute;inset:0 0 42px;overflow:hidden;background:radial-gradient(ellipse at center,#3b2025,#100d0f 72%)}
+.showreel-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.showreel-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:22px;background:linear-gradient(180deg,#0b0808a8 0%,transparent 28%,transparent 55%,#0b0808b8 100%);pointer-events:none}
+.showreel-kicker{font:10px 'Special Elite',monospace;letter-spacing:1px;color:#f2dfe0}
+.showreel-caption{align-self:flex-start;font:clamp(26px,3vw,42px)/1.05 'New Rocker',cursive;color:#fff4f4;text-shadow:0 2px 18px #000;letter-spacing:.01em}
+.showreel-caption em{font-style:normal;color:#ff626a}
+.showreel-hint{align-self:flex-end;display:flex;align-items:center;gap:8px;font:10px 'Special Elite',monospace;color:#fff0f0;letter-spacing:.5px}
+.showreel-hint svg{color:#ff626a}
+.showreel-stage .stage-bottom{bottom:14px}
+.showreel-stage .stage-vertical{right:10px;top:35%;text-shadow:0 1px 6px #000}
+.button-primary{font-family:'Special Elite',monospace}
+@media(max-width:650px){
+ .hero-stage.showreel-stage{min-height:390px}
+ .showreel-frame{inset:0 0 42px}
+ .showreel-overlay{padding:14px}
+ .showreel-caption{font-size:30px}
+ .hero h1{letter-spacing:-.02em}
+}
