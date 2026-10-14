@@ -162,3 +162,18 @@ body{color:#f4f1f1}
 .resume-embed-heading a{display:inline-flex;align-items:center;gap:7px;color:#ff737a;text-decoration:none}
 .resume-embed{display:block;width:100%;height:1050px;border:1px solid #30282a;background:#151315}
 @media(max-width:650px){.resume-embed-wrap{padding:10px;margin-top:32px}.resume-embed-heading{font-size:9px}.resume-embed{height:1200px}}
+
+
+/* Visible visual preview for Universal FBX Control Builder */
+.fbx-tool-preview{margin:-2px -2px 22px;border:1px solid #353640;background:#11151d;overflow:hidden;color:#cbd5ef;font-family:'DM Mono',monospace}
+.fbx-preview-toolbar{display:flex;justify-content:space-between;gap:8px;padding:10px 11px;background:#20232b;border-bottom:1px solid #3b3d47;font-size:8px;letter-spacing:.07em;color:#e2e5ee}
+.fbx-preview-body{display:grid;grid-template-columns:1fr .8fr;min-height:210px}
+.fbx-preview-fields{padding:12px 9px;background:#24262b;border-right:1px solid #41434a}
+.fbx-preview-fields>b{display:block;font-size:8px;letter-spacing:.06em;color:#d7d9df;margin-bottom:10px}
+.fbx-field{display:flex;align-items:center;gap:7px;margin:7px 0;font-size:8px;color:#d1d2d7}
+.fbx-field span{width:52px;flex-shrink:0}.fbx-field i{display:block;height:8px;background:#41444c;border-radius:1px;max-width:100%}
+.fbx-preview-viewport{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:8px;background:linear-gradient(145deg,#8799ad,#39495e)}
+.fbx-preview-viewport svg{height:175px;max-width:100%;filter:drop-shadow(0 2px 4px #17233366)}
+.fbx-preview-viewport>span{font-size:6px;letter-spacing:.04em;color:#e9eff9;text-align:center}
+.fbx-preview-footer{display:flex;justify-content:space-between;gap:6px;padding:9px 10px;background:#171a20;border-top:1px solid #343740;font-size:7px;letter-spacing:.04em;color:#73dfc0}
+@media(max-width:480px){.fbx-preview-body{grid-template-columns:1fr .75fr;min-height:190px}.fbx-preview-viewport svg{height:155px}.fbx-preview-toolbar{font-size:7px}.fbx-preview-fields{padding:10px 7px}}
