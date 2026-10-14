@@ -67,7 +67,7 @@ h1,h2,h3,.brand-mark,.button,.text-link,.nav>a,.visual-symbol{font-family:'New R
 .hero-stage.showreel-stage{min-height:500px;background:#100d0f;border-color:#543238;display:flex;flex-direction:column}
 .showreel-frame{position:absolute;inset:0 0 42px;overflow:hidden;background:radial-gradient(ellipse at center,#3b2025,#100d0f 72%)}
 .showreel-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.showreel-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:22px;background:linear-gradient(180deg,#0b0808a8 0%,transparent 28%,transparent 55%,#0b0808b8 100%);pointer-events:none}
+.showreel-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-start;gap:22px;padding:22px;background:linear-gradient(180deg,#0b0808dc 0%,#0b08088f 24%,transparent 46%,transparent 68%,#0b0808a8 100%);pointer-events:none}
 .showreel-kicker{font:10px 'Special Elite',monospace;letter-spacing:1px;color:#f2dfe0}
 .showreel-caption{align-self:flex-start;font:clamp(26px,3vw,42px)/1.05 'New Rocker',cursive;color:#fff4f4;text-shadow:0 2px 18px #000;letter-spacing:.01em}
 .showreel-caption em{font-style:normal;color:#ff626a}
@@ -149,3 +149,8 @@ body{color:#f4f1f1}
 .resume-history small{font-size:12px;color:#b5a7aa}
 @media(max-width:900px){.resume-layout{gap:35px}}
 @media(max-width:650px){.resume-layout{grid-template-columns:1fr;gap:30px;margin-top:28px}.resume-copy h2{font-size:46px}.resume-copy>p{font-size:14px}.resume-details{padding:20px}.resume-actions{align-items:stretch}.resume-actions .button{flex:1}}
+
+/* Keep showreel title above the video action and visually clear. */
+.showreel-caption{margin-top:0;max-width:92%;text-wrap:balance;text-shadow:0 3px 18px #000,0 1px 3px #000;}
+.showreel-kicker{align-self:flex-start;background:#0b0808b8;padding:7px 9px;}
+@media(max-width:650px){.showreel-overlay{gap:15px;padding:14px}.showreel-caption{font-size:28px;max-width:95%}}
