@@ -154,3 +154,11 @@ body{color:#f4f1f1}
 .showreel-caption{margin-top:0;max-width:92%;text-wrap:balance;text-shadow:0 3px 18px #000,0 1px 3px #000;}
 .showreel-kicker{align-self:flex-start;background:#0b0808b8;padding:7px 9px;}
 @media(max-width:650px){.showreel-overlay{gap:15px;padding:14px}.showreel-caption{font-size:28px;max-width:95%}}
+
+
+/* Full resume preview embedded directly in the website */
+.resume-embed-wrap{margin-top:52px;border:1px solid #403236;background:#101012;padding:20px}
+.resume-embed-heading{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:16px;font:10px 'DM Mono',monospace;letter-spacing:.1em;color:#c2aeb1}
+.resume-embed-heading a{display:inline-flex;align-items:center;gap:7px;color:#ff737a;text-decoration:none}
+.resume-embed{display:block;width:100%;height:1050px;border:1px solid #30282a;background:#151315}
+@media(max-width:650px){.resume-embed-wrap{padding:10px;margin-top:32px}.resume-embed-heading{font-size:9px}.resume-embed{height:1200px}}
