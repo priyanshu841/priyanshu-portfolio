@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#171a22"/><stop offset="1" stop-color="#08090d"/></linearGradient>
+ <linearGradient id="pane" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#343941"/><stop offset="1" stop-color="#1b1e25"/></linearGradient>
+ <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ff4e59"/><stop offset="1" stop-color="#b51e37"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="9"/></filter>
+</defs>
+<rect width="1200" height="675" fill="url(#bg)"/>
+<circle cx="950" cy="340" r="230" fill="#087f70" opacity=".13" filter="url(#glow)"/>
+<path d="M0 0H1200V10H0Z" fill="url(#accent)"/>
+<g font-family="Arial,Helvetica,sans-serif">
+ <text x="58" y="66" fill="#8b96a9" font-size="17" letter-spacing="5">MAYA PIPELINE TOOL  /  TECHNICAL ANIMATION</text>
+ <text x="58" y="138" fill="#f4f2f3" font-size="46" font-weight="800" letter-spacing="1">UNIVERSAL FBX</text>
+ <text x="58" y="194" fill="#ff626a" font-size="46" font-weight="800" letter-spacing="1">CONTROL BUILDER</text>
+ <text x="60" y="230" fill="#b5bdcb" font-size="19">Build animator-friendly controls from imported FBX skeletons.</text>
+ <rect x="58" y="263" width="450" height="344" rx="8" fill="#101217" stroke="#4a4d57" stroke-width="2"/>
+ <rect x="58" y="263" width="450" height="42" rx="8" fill="#2b2e36"/>
+ <rect x="58" y="297" width="450" height="8" fill="#2b2e36"/>
+ <circle cx="78" cy="284" r="5" fill="#ff626a"/><circle cx="96" cy="284" r="5" fill="#e0b05c"/><circle cx="114" cy="284" r="5" fill="#5ecaa7"/>
+ <text x="139" y="289" fill="#e5e7ed" font-size="13" font-weight="700">UNIVERSAL FBX CONTROL BUILDER</text>
+ <rect x="77" y="324" width="185" height="261" rx="3" fill="#292c33"/>
+ <text x="91" y="348" fill="#f4f4f5" font-size="12" font-weight="700" letter-spacing="1">SKELETON MAPPING</text>
+ <g font-size="12" fill="#c5cad4">
+ <text x="91" y="382">Spine</text><rect x="153" y="368" width="91" height="20" rx="2" fill="#454a55"/><text x="160" y="382" fill="#8ce2ce">Spine2</text>
+ <text x="91" y="416">Neck</text><rect x="153" y="402" width="91" height="20" rx="2" fill="#454a55"/><text x="160" y="416" fill="#8ce2ce">Neck</text>
+ <text x="91" y="450">Left Arm</text><rect x="153" y="436" width="91" height="20" rx="2" fill="#454a55"/>
+ <text x="91" y="484">Right Arm</text><rect x="153" y="470" width="91" height="20" rx="2" fill="#454a55"/>
+ <text x="91" y="518">Left Leg</text><rect x="153" y="504" width="91" height="20" rx="2" fill="#454a55"/>
+ <text x="91" y="552">Right Leg</text><rect x="153" y="538" width="91" height="20" rx="2" fill="#454a55"/>
+ </g>
+ <rect x="91" y="565" width="153" height="25" rx="3" fill="#a9293e"/><text x="167" y="582" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">BUILD CONTROLS</text>
+ <rect x="278" y="324" width="210" height="261" rx="3" fill="url(#pane)"/>
+ <path d="M283 455H483M383 329V580" stroke="#aab3c4" stroke-opacity=".18" stroke-dasharray="5 5"/>
+ <g transform="translate(382 350)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <g stroke="#4d7cff" stroke-width="3"><circle cx="0" cy="22" r="19"/><path d="M0 41L0 91M0 54L-48 67L-83 94M0 54L48 67L83 94M0 91L-26 134L-32 190M0 91L26 134L32 190M-26 134L-36 159M26 134L36 159"/></g>
+  <g stroke="#00d6a4" stroke-width="3"><path d="M0 4V210M-48 67L-83 94M48 67L83 94M-32 190L-36 159M32 190L36 159"/><circle cx="0" cy="41" r="5" fill="#00d6a4"/><circle cx="0" cy="91" r="5" fill="#00d6a4"/><circle cx="-48" cy="67" r="5" fill="#00d6a4"/><circle cx="48" cy="67" r="5" fill="#00d6a4"/><circle cx="-32" cy="190" r="5" fill="#00d6a4"/><circle cx="32" cy="190" r="5" fill="#00d6a4"/></g>
+ </g>
+ <text x="383" y="574" fill="#b9c2d2" font-size="10" text-anchor="middle" letter-spacing="1">JOINT MAP / RIG PREVIEW</text>
+ <rect x="560" y="283" width="580" height="324" rx="8" fill="#15171e" stroke="#393d47" stroke-width="2"/>
+ <text x="592" y="328" fill="#aab3c4" font-size="14" letter-spacing="2">DESIGNED FOR GAME CHARACTER PIPELINES</text>
+ <g transform="translate(594 372)">
+  <circle cx="20" cy="20" r="18" fill="#252a35" stroke="#ff626a"/><path d="M11 20h18M20 11v18" stroke="#ff626a" stroke-width="2"/>
+  <text x="53" y="17" fill="#f2f2f4" font-size="20" font-weight="700">Auto skeleton mapping</text><text x="53" y="42" fill="#aeb5c3" font-size="15">FBX and Mixamo-style joint workflows</text>
+ </g>
+ <g transform="translate(594 453)">
+  <circle cx="20" cy="20" r="18" fill="#252a35" stroke="#00d6a4"/><path d="M10 20l7 7 14-15" stroke="#00d6a4" stroke-width="2.5" fill="none"/>
+  <text x="53" y="17" fill="#f2f2f4" font-size="20" font-weight="700">Animator-ready controls</text><text x="53" y="42" fill="#aeb5c3" font-size="15">A cleaner starting point for animation</text>
+ </g>
+ <g transform="translate(594 534)">
+  <circle cx="20" cy="20" r="18" fill="#252a35" stroke="#6689ff"/><path d="M10 24l10-13 10 13M20 11v18" stroke="#6689ff" stroke-width="2.5" fill="none"/>
+  <text x="53" y="17" fill="#f2f2f4" font-size="20" font-weight="700">Maya rigging workflow</text><text x="53" y="42" fill="#aeb5c3" font-size="15">Technical animation utility</text>
+ </g>
+ <text x="60" y="646" fill="#697386" font-size="12" letter-spacing="3">PRIYANSHU MISHRA  •  TECHNICAL ANIMATION TOOLS</text>
+</g></svg>
