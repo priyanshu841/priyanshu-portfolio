@@ -18,7 +18,7 @@ const scripts = [
 ]
 function Header() {
   const [open, setOpen] = useState(false)
-  const links = [['Work', '#work'], ['Technical', '#technical'], ['Scripts', '#scripts'], ['Resume', '#resume'], ['About', '#about'], ['Contact', '#contact']]
+  const links = [['Work', '#work'], ['Technical', '#technical'], ['Software', '#scripts'], ['Resume', '#resume'], ['About', '#about'], ['Contact', '#contact']]
   return <header className="header"><a className="brand" href="#top"><span className="brand-mark">P<span>.</span></span><span className="brand-name">PRIYANSHU<br/><small>ANIMATION / TECH ART</small></span></a><nav className={open ? 'nav open' : 'nav'}>{links.map(([n,h]) => <a key={n} href={h} onClick={() => setOpen(false)}>{n}</a>)}<a className="nav-cta" href="#contact">LET'S TALK <ArrowUpRight size={14}/></a></nav><button className="menu-toggle" aria-label="Toggle navigation" onClick={() => setOpen(!open)}>{open ? <X/> : <Menu/>}</button></header>
 }
 function Label({ number, children }) { return <div className="section-label"><span>{number} /</span><span>{children}</span><i/></div> }
