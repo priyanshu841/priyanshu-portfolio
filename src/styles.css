@@ -276,3 +276,7 @@ body{color:#f4f1f1}
 @media(max-width:650px){
   .showreel-caption{transform:translateY(-7px)}
 }
+
+
+/* Remove the showreel text/gradient overlay so the video is unobstructed. */
+.showreel-overlay{display:none !important}
