@@ -255,3 +255,7 @@ body{color:#f4f1f1}
   -webkit-text-stroke:0;
 }
 
+/* Keep the showreel video fully visible; remove the decorative overlay covering it. */
+.showreel-frame iframe{z-index:2;display:block;background:#100d0f}
+.showreel-overlay{display:none}
+
