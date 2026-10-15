@@ -235,3 +235,23 @@ body{color:#f4f1f1}
 .software-empty span{font-size:13px;color:#c2babc}
 @media(max-width:900px){.software-controls{grid-template-columns:1fr auto}.software-search{grid-column:1/-1}.software-filter-groups{flex-direction:row;flex-wrap:wrap}.software-updates{grid-template-columns:1fr 1.3fr}.software-updates>a{grid-column:1/-1}.software-feature-copy{padding:25px}}
 @media(max-width:650px){.software-feature{grid-template-columns:1fr}.software-feature-copy{padding:23px}.software-feature-copy h3{font-size:35px;margin-top:22px}.software-feature-visual{min-height:220px;border-left:0;border-top:1px solid #493337}.software-updates{grid-template-columns:1fr;gap:12px;padding:18px 0}.software-updates>a{grid-column:auto}.software-controls{grid-template-columns:1fr;gap:12px}.software-search{grid-column:auto}.software-filter-groups{flex-direction:column;gap:8px}.software-filter-groups .filters{flex-wrap:wrap}.software-controls .result-count{margin-left:0}.script-specs{grid-template-columns:1fr 1fr}.script-details-toggle{font-size:8px}}
+
+/* Text treatment requested: outline red accent words only; keep white text solid. */
+.hero h1 em,
+.section-heading h2 em,
+.technical-layout h2 em,
+.about-layout h2 em,
+.contact-main h2 em,
+.resume-copy h2 em,
+.showreel-caption em,
+.software-feature-copy h3 em{
+  color:transparent;
+  -webkit-text-fill-color:transparent;
+  -webkit-text-stroke:1.15px #ff3b45;
+}
+.hero h1 .outline-word{
+  color:#e8eae4;
+  -webkit-text-fill-color:#e8eae4;
+  -webkit-text-stroke:0;
+}
+
