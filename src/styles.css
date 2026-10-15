@@ -181,3 +181,14 @@ body{color:#f4f1f1}
 
 /* Wide promotional thumbnail for Universal FBX Control Builder */
 .fbx-promo-image{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;margin:0 0 22px;border:1px solid #343741;background:#111217;}
+
+
+/* Horizontal side-scroll rails for Selected Work and Script Library */
+#work .projects-grid,#scripts .scripts-grid{display:flex;flex-wrap:nowrap;gap:22px;overflow-x:auto;overflow-y:hidden;padding:4px 2px 20px;scroll-snap-type:x mandatory;scroll-behavior:smooth;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:#ff626a #242124}
+#work .projects-grid>.project-card{flex:0 0 clamp(280px,34%,430px);min-width:0;scroll-snap-align:start}
+#scripts .scripts-grid>.script-card{flex:0 0 clamp(300px,34%,430px);min-width:0;scroll-snap-align:start}
+#work .projects-grid::-webkit-scrollbar,#scripts .scripts-grid::-webkit-scrollbar{height:8px}
+#work .projects-grid::-webkit-scrollbar-track,#scripts .scripts-grid::-webkit-scrollbar-track{background:#242124;border-radius:20px}
+#work .projects-grid::-webkit-scrollbar-thumb,#scripts .scripts-grid::-webkit-scrollbar-thumb{background:#ff626a;border-radius:20px}
+#work .projects-grid:focus-visible,#scripts .scripts-grid:focus-visible{outline:1px solid #ff626a;outline-offset:4px}
+@media(max-width:700px){#work .projects-grid,#scripts .scripts-grid{gap:14px;padding-bottom:16px}#work .projects-grid>.project-card{flex-basis:84%}#scripts .scripts-grid>.script-card{flex-basis:86%}}
