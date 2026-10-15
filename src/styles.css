@@ -280,3 +280,34 @@ body{color:#f4f1f1}
 
 /* Remove the showreel text/gradient overlay so the video is unobstructed. */
 .showreel-overlay{display:none !important}
+
+
+/* Show the showreel title again, without restoring the dark overlay or gradient. */
+.showreel-overlay{
+  display:flex !important;
+  z-index:3;
+  background:transparent !important;
+  gap:16px;
+  pointer-events:none;
+}
+.showreel-kicker,
+.showreel-caption,
+.showreel-hint{
+  background:transparent !important;
+  text-shadow:none !important;
+}
+.showreel-caption{
+  color:#fff4f4;
+  margin-top:0;
+  transform:translateY(-10px);
+  text-shadow:0 1px 3px #0008 !important;
+}
+.showreel-caption em{
+  color:#ff626a;
+  -webkit-text-fill-color:#ff626a;
+  -webkit-text-stroke:0;
+}
+.showreel-kicker,.showreel-hint{color:#fff4f4}
+@media(max-width:650px){
+  .showreel-caption{transform:translateY(-7px);font-size:28px}
+}
