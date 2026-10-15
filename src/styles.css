@@ -268,13 +268,13 @@ body{color:#f4f1f1}
 .showreel-hint{background:#0b0808b8;padding:8px 10px}
 
 
-/* Requested showreel title adjustment: no text shadow, move title slightly upward. */
+/* Requested showreel title adjustment: no text shadow, move title further upward. */
 .showreel-caption{
   text-shadow:none !important;
-  transform:translateY(-10px);
+  transform:translateY(-24px);
 }
 @media(max-width:650px){
-  .showreel-caption{transform:translateY(-7px)}
+  .showreel-caption{transform:translateY(-16px)}
 }
 
 
