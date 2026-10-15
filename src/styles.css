@@ -255,7 +255,14 @@ body{color:#f4f1f1}
   -webkit-text-stroke:0;
 }
 
-/* Keep the showreel video fully visible; remove the decorative overlay covering it. */
-.showreel-frame iframe{z-index:2;display:block;background:#100d0f}
-.showreel-overlay{display:none}
-
+/* Keep the showreel title visible without hiding or blocking the video. */
+.showreel-frame iframe{z-index:1;display:block;background:#100d0f}
+.showreel-overlay{
+  display:flex;
+  z-index:3;
+  background:linear-gradient(180deg,#0b08089c 0%,transparent 34%,transparent 65%,#0b08087a 100%);
+  pointer-events:none;
+}
+.showreel-kicker{background:#0b0808a8;padding:7px 9px;width:max-content;max-width:100%}
+.showreel-caption{padding:7px 10px;background:#0b080866}
+.showreel-hint{background:#0b0808b8;padding:8px 10px}
