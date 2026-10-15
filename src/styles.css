@@ -241,9 +241,9 @@ body{color:#f4f1f1}
 .hero h1,.section-heading h2,.technical-layout h2,.about-layout h2,.contact-main h2,.resume-copy h2{
   color:transparent;-webkit-text-fill-color:transparent;-webkit-text-stroke:1.15px #f0eee9;paint-order:stroke fill;
 }
-/* Keep red accent and branding text solid red, without an outline. */
+/* Red accent words get a red outline; all other heading text keeps its existing style. */
 .hero h1 em,.section-heading h2 em,.technical-layout h2 em,.about-layout h2 em,.contact-main h2 em,.resume-copy h2 em,.showreel-caption em,.software-feature-copy h3 em{
-  color:#ff626a;-webkit-text-fill-color:#ff626a;-webkit-text-stroke:0;
+  color:transparent;-webkit-text-fill-color:transparent;-webkit-text-stroke:1.15px #ff626a;
 }
 .project-card h3,.script-card h3,.capability h3,.software-feature-copy h3,.software-updates h3,.resume-focus h3{
   color:transparent;-webkit-text-fill-color:transparent;-webkit-text-stroke:.65px #e8eae4;
