@@ -266,3 +266,13 @@ body{color:#f4f1f1}
 .showreel-kicker{background:#0b0808a8;padding:7px 9px;width:max-content;max-width:100%}
 .showreel-caption{padding:7px 10px;background:#0b080866}
 .showreel-hint{background:#0b0808b8;padding:8px 10px}
+
+
+/* Requested showreel title adjustment: no text shadow, move title slightly upward. */
+.showreel-caption{
+  text-shadow:none !important;
+  transform:translateY(-10px);
+}
+@media(max-width:650px){
+  .showreel-caption{transform:translateY(-7px)}
+}
