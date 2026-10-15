@@ -235,21 +235,3 @@ body{color:#f4f1f1}
 .software-empty span{font-size:13px;color:#c2babc}
 @media(max-width:900px){.software-controls{grid-template-columns:1fr auto}.software-search{grid-column:1/-1}.software-filter-groups{flex-direction:row;flex-wrap:wrap}.software-updates{grid-template-columns:1fr 1.3fr}.software-updates>a{grid-column:1/-1}.software-feature-copy{padding:25px}}
 @media(max-width:650px){.software-feature{grid-template-columns:1fr}.software-feature-copy{padding:23px}.software-feature-copy h3{font-size:35px;margin-top:22px}.software-feature-visual{min-height:220px;border-left:0;border-top:1px solid #493337}.software-updates{grid-template-columns:1fr;gap:12px;padding:18px 0}.software-updates>a{grid-column:auto}.software-controls{grid-template-columns:1fr;gap:12px}.software-search{grid-column:auto}.software-filter-groups{flex-direction:column;gap:8px}.software-filter-groups .filters{flex-wrap:wrap}.software-controls .result-count{margin-left:0}.script-specs{grid-template-columns:1fr 1fr}.script-details-toggle{font-size:8px}}
-
-
-/* Only red accent words use outline styling; white heading text stays solid. */
-.hero h1,.section-heading h2,.technical-layout h2,.about-layout h2,.contact-main h2,.resume-copy h2{
-  color:#f0eee9;-webkit-text-fill-color:#f0eee9;-webkit-text-stroke:0;
-}
-/* Red accent words get a red outline; all other heading text keeps its existing style. */
-.hero h1 em,.section-heading h2 em,.technical-layout h2 em,.about-layout h2 em,.contact-main h2 em,.resume-copy h2 em,.showreel-caption em,.software-feature-copy h3 em{
-  color:transparent;-webkit-text-fill-color:transparent;-webkit-text-stroke:1.15px #ff626a;
-}
-.project-card h3,.script-card h3,.capability h3,.software-feature-copy h3,.software-updates h3,.resume-focus h3{
-  color:transparent;-webkit-text-fill-color:transparent;-webkit-text-stroke:.65px #e8eae4;
-}
-.script-details>strong,.software-eyebrow{color:#ff858b}
-@media(max-width:650px){
- .hero h1,.section-heading h2,.technical-layout h2,.about-layout h2,.contact-main h2,.resume-copy h2{-webkit-text-stroke:0}
- .project-card h3,.script-card h3,.capability h3,.software-feature-copy h3,.software-updates h3,.resume-focus h3{-webkit-text-stroke:.55px #e8eae4}
-}
