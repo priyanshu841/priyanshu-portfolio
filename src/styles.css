@@ -177,3 +177,7 @@ body{color:#f4f1f1}
 .fbx-preview-viewport>span{font-size:6px;letter-spacing:.04em;color:#e9eff9;text-align:center}
 .fbx-preview-footer{display:flex;justify-content:space-between;gap:6px;padding:9px 10px;background:#171a20;border-top:1px solid #343740;font-size:7px;letter-spacing:.04em;color:#73dfc0}
 @media(max-width:480px){.fbx-preview-body{grid-template-columns:1fr .75fr;min-height:190px}.fbx-preview-viewport svg{height:155px}.fbx-preview-toolbar{font-size:7px}.fbx-preview-fields{padding:10px 7px}}
+
+
+/* Wide promotional thumbnail for Universal FBX Control Builder */
+.fbx-promo-image{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;margin:0 0 22px;border:1px solid #343741;background:#111217;}
