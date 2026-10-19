@@ -28,6 +28,7 @@ function ScriptCard({ s }) {
  const [expanded, setExpanded] = useState(false)
  return <article className="script-card">
   {s.name === 'Universal FBX Control Builder' && <img className="fbx-promo-image" src="./images/universal-fbx-control-builder.svg" alt="Universal FBX Control Builder preview" loading="lazy"/>}
+  {s.name === 'CLEAVEFX Studio' && <img className="fbx-promo-image cleavefx-promo-image" src="./images/cleavefx-studio-thumbnail.svg" alt="CLEAVEFX Studio — slash trails and ground destruction VFX tool" loading="lazy"/>}
   <div className="script-card-top"><span className="script-icon"><Code2 size={20}/></span><span className={'script-badge ' + (s.kind === 'Free' ? 'free' : 'paid')}>{s.kind === 'Free' ? 'FREE TOOL' : 'PAID / PLANNED'}</span></div>
   <div className="script-tag">{s.tag} / {s.category.toUpperCase()}</div><h3>{s.name}</h3>
   <div className="script-version">{s.version}</div><p>{s.description}</p>
