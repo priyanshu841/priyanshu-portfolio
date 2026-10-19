@@ -15,6 +15,7 @@ const scripts = [
   { id: 1, name: 'Universal FBX Control Builder', kind: 'Paid', category: 'Rigging', version: 'Maya 2024+', description: 'Build an animator-friendly control rig from supported FBX skeletons, with a workflow designed to keep the source skeleton intact.', price: 'COMING SOON', tag: 'RIGGING', updated: 'In development', size: 'Release details pending', details: 'Planned focus: skeleton mapping, control generation, and an animator-ready rig workflow. Final compatibility, documentation, and delivery details will be published with the release.' },
   { id: 2, name: 'Quick Animation Utilities', kind: 'Free', category: 'Workflow', version: 'Maya Python', description: 'A collection of small tools for everyday animation tasks and workflow cleanup.', price: 'FREE', tag: 'WORKFLOW', updated: 'Details pending', size: 'Package details pending', details: 'Add the actual script files, supported Maya versions, installation steps, and a short demo before publishing a download.' },
   { id: 3, name: 'Pose & Control Helpers', kind: 'Free', category: 'Animation', version: 'Coming soon', description: 'Quality-of-life helpers for animators, planned around faster posing and control selection.', price: 'FREE', tag: 'ANIMATION', updated: 'Coming soon', size: 'Package details pending', details: 'This is a placeholder listing. Publish only when the tool, usage notes, compatibility information, and download package are ready.' },
+  { id: 4, name: 'CLEAVEFX', kind: 'Paid', category: 'VFX', version: 'Gumroad product', description: 'A tool from Priyanshu Mishra. Visit the Gumroad listing for the full feature description, compatibility details, and purchase options.', price: 'VIEW ON GUMROAD', tag: 'VFX TOOL', updated: 'Available on Gumroad', size: 'See product page', details: 'Open the official Gumroad product page to review the tool details and purchase or download options.', url: 'https://techpriyanshu.gumroad.com/l/CLEAVEFX' },
 ]
 function Header() {
   const [open, setOpen] = useState(false)
@@ -32,7 +33,7 @@ function ScriptCard({ s }) {
   <div className="script-version">{s.version}</div><p>{s.description}</p>
   <div className="script-specs"><span><small>STATUS</small><b>{s.updated}</b></span><span><small>PACKAGE</small><b>{s.size}</b></span></div>
   {expanded && <div className="script-details"><strong>ABOUT THIS TOOL</strong><p>{s.details}</p><strong>BEFORE YOU DOWNLOAD</strong><p>Check the supported Maya version and installation notes. Download and purchase links will be enabled when the real package is published.</p></div>}
-  <div className="script-bottom"><strong>{s.price}</strong><button type="button" className="script-details-toggle" onClick={() => setExpanded(!expanded)} aria-expanded={expanded}>{expanded ? 'LESS DETAILS' : 'DETAILS'} <ArrowUpRight size={16}/></button></div>
+  <div className="script-bottom"><strong>{s.price}</strong>{s.url ? <a className="script-details-toggle" href={s.url} target="_blank" rel="noreferrer">OPEN PRODUCT <ArrowUpRight size={16}/></a> : <button type="button" className="script-details-toggle" onClick={() => setExpanded(!expanded)} aria-expanded={expanded}>{expanded ? 'LESS DETAILS' : 'DETAILS'} <ArrowUpRight size={16}/></button>}</div>
  </article>
 }
 function App() {
